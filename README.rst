@@ -61,4 +61,5 @@ MIT License
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 
-.. |Logo| image:: ./doc/images/trends.png:height: 300px
+.. |Logo| image:: ./doc/images/trends.png
+		:height: 300px
