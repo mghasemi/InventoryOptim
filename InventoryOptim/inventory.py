@@ -240,7 +240,7 @@ class InventoryOptim(object):
         # self.colors = list(mcolors.CSS4_COLORS.keys())[5:]
         if not self.fitted:
             self.fit_regressors()
-        x, fx, u, p_u, cnf_u, c, p_c, cnf_c = self._conf_ints()
+        _, fx, _, p_u, cnf_u, _, p_c, cnf_c = self._conf_ints()
         n_flds = len(self.unit_flds)
         all_x = self.df["T"].values
         fig, axes = plt.subplots(
@@ -291,7 +291,7 @@ class InventoryOptim(object):
         plt.figure(figsize=(40, 20))
         if not self.analyzed:
             self.adjust_system("b")
-        x, fx, u, p_u, cnf_u, _, p_c, cnf_c = self._conf_ints()
+        _, fx, _, p_u, cnf_u, _, p_c, cnf_c = self._conf_ints()
         tot_trend_cost = None
         tot_actual_cost = None
         tot_changed_cost = None
