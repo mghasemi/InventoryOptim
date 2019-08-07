@@ -144,7 +144,6 @@ class InventoryOptim(object):
         Initializes the regression objects and fit them on training data
         """
         from numpy import reshape
-        from scipy.stats import t
         from copy import copy
 
         n_flds = len(self.unit_flds)
@@ -175,7 +174,7 @@ class InventoryOptim(object):
         """
         Calculates the confidence intervals for regression curves
         """
-        from numpy import array, reshape, power, sum, sqrt, linspace
+        from numpy import reshape, power, sum, sqrt, linspace
         from scipy.stats import t
 
         u_conf = []
@@ -234,7 +233,6 @@ class InventoryOptim(object):
         """
         Plots the initial data points and regression curves for projection date
         """
-        from numpy import abs
         import matplotlib.pyplot as plt
         # from matplotlib import colors as mcolors
 
@@ -287,10 +285,8 @@ class InventoryOptim(object):
         """
         Plots the outcome of the adjustment.
         """
-        from numpy import abs, array, multiply
+        from numpy import array, multiply
         import matplotlib.pyplot as plt
-        from matplotlib.patches import Ellipse
-        from datetime import timedelta
 
         plt.figure(figsize=(40, 20))
         if not self.analyzed:
@@ -445,14 +441,6 @@ class InventoryOptim(object):
         self.constraints.append((fld, value, dt))
         self.bound_flds.add(fld)
 
-    def make_date_interval(self, dt, n_days):
-        """
-        Makes a list of 2*`n_days` dates centered at `dt`
-        """
-        from datetime import timedelta
-
-        return [dt + timedelta(days=_) for _ in range(-n_days, n_days + 1)]
-
     def make_date_interval_val(self, dt, n_days):
         """
         Converts the outcome of `self.make_date_interval` into a list of floats
@@ -551,9 +539,8 @@ class InventoryOptim(object):
             )[0]
 
         def to_be_optimized(x, tbo="u"):
-            from numpy import array, append, reshape
+            from numpy import array
             from scipy.integrate import quad
-            from copy import copy
 
             idx = 0
             fns = {}
