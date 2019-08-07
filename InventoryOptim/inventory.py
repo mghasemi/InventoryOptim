@@ -174,7 +174,7 @@ class InventoryOptim(object):
         """
         Calculates the confidence intervals for regression curves
         """
-        from numpy import reshape, power, sum, sqrt, linspace
+        from numpy import reshape, power, sqrt, linspace
         from scipy.stats import t
 
         u_conf = []
@@ -291,7 +291,7 @@ class InventoryOptim(object):
         plt.figure(figsize=(40, 20))
         if not self.analyzed:
             self.adjust_system("b")
-        x, fx, u, p_u, cnf_u, c, p_c, cnf_c = self._conf_ints()
+        x, fx, u, p_u, cnf_u, _, p_c, cnf_c = self._conf_ints()
         tot_trend_cost = None
         tot_actual_cost = None
         tot_changed_cost = None
