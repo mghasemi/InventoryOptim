@@ -1,4 +1,4 @@
-|Logo|:height: 300px
+|Logo|
 =============================
 InventoryOptim
 =============================
@@ -62,4 +62,3 @@ MIT License
     SOFTWARE.
 
 .. |Logo| image:: ./doc/images/trends.png
-		:height: 300px
