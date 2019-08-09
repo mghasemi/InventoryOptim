@@ -1,4 +1,4 @@
-|Quality| |Doc| |Licence|
+|Quality| |Travis| |Doc| |Licence|
 
 |Logo|
 =============================
@@ -67,8 +67,10 @@ MIT License
     :width: 200px
 .. |Doc| image:: https://readthedocs.org/projects/inventoryoptim/badge/?version=latest
     :target: https://inventoryoptim.readthedocs.io/en/latest/?badge=latest
-	:alt: Documentation Status
+    :alt: Documentation Status
 .. |Licence| image:: https://img.shields.io/badge/license-MIT-blue.svg
     :target: https://github.com/mghasemi/InventoryOptim/blob/master/License.txt
 .. |Quality| image:: https://api.codacy.com/project/badge/Grade/6ff0fcc32de54035b8fa260d451e44ef
     :target: https://www.codacy.com/app/mghasemi/InventoryOptim?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mghasemi/InventoryOptim&amp;utm_campaign=Badge_Grade
+.. |Travis| image:: https://travis-ci.org/mghasemi/InventoryOptim.svg?branch=master
+    :target: https://travis-ci.org/mghasemi/InventoryOptim

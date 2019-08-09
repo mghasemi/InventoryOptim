@@ -8,7 +8,10 @@ from InventoryOptim.inventory import InventoryOptim
 import warnings
 warnings.filterwarnings("ignore", category=Warning)
 
-df = read_csv('CFS.csv', parse_dates=['ds'], infer_datetime_format=True)
+try:
+    df = read_csv('CFS.csv', parse_dates=['ds'], infer_datetime_format=True)
+except FileNotFoundError:
+    df = read_csv('./examples/CFS.csv', parse_dates=['ds'], infer_datetime_format=True)
 pairs= [('FC', 'FCc'), ('GH', 'GHc'), ('EF', 'EFc'), ('OP', 'OPc'), ('SH', 'SHc')]
 # define regressors
 param_grid_sgd = {"alpha": np.logspace(-4, 0, 5),
