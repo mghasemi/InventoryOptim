@@ -1,5 +1,9 @@
 |Logo|
 =============================
+
+.. image:: https://api.codacy.com/project/badge/Grade/930f50d7a31b4d72a323c74a3489d71f
+   :alt: Codacy Badge
+   :target: https://app.codacy.com/app/mghasemi/InventoryOptim?utm_source=github.com&utm_medium=referral&utm_content=mghasemi/InventoryOptim&utm_campaign=Badge_Grade_Dashboard
 InventoryOptim
 =============================
 Given inventory data of multiple (interacting) commodities from stock with limited but variable capacity, provide insight on
